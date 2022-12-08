@@ -78,14 +78,14 @@ elseBlock:
         adr     x9, iInWord
         ldr     w10, [x9]
         cmp     w10, TRUE
-        beq     mainLoopBack
+        beq     afterConditions
 
         //    iInWord = TRUE;
         mov     w10, TRUE
         str     w10, [x9]
 
 afterConditions:
-        // if (iInWord)
+        // if (iChar == '\n')
         adr     x9, iChar
         ldr     w10, [x9]
         cmp     w10, '\n'
