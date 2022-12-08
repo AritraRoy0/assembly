@@ -36,11 +36,11 @@ main:
 
 mainLoop:
     // while ((iChar = getchar()) != EOF)
-        adr     w9, iChar
+        adr     x9, iChar
         bl      getchar
         cmp     w0, EOF
         beq     endMainLoop
-        str     w0, [w9]
+        str     w0, [x9]
 
     // lCharCount++;
         adr     x10, lCharCount
