@@ -15,6 +15,4 @@ int main(void) {
 
     return 0;
 
-//0x09, 0x0A or in the range 0x20 through 0x7E.
-
 }
