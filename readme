@@ -34,7 +34,7 @@ nature of the interaction, may additionally require the interaction
 being reported to the Committee on Discipline. Write "None" if you used
 no unauthorized sources of information.
 
-
+N/A
 
 
 
@@ -61,7 +61,25 @@ mywc*.txt is general format of test files
 0: Minimum test copied from assignment specification site for initial 
 testing
 
+1: This file contains multiple consequetive spaces and lines to test 
+corner cases
 
+2: This file contains several consequetive spaces and lines to test 
+corner cases and is larger than than file 1 in length
+
+3: This file contains text copied over from the assignment specification
+and contains all variations of charachter, space, and new lines such
+that every transition and thus every line of statements will be tested.
+This includes (added) double spaces, and double new lines.
+
+4: This file contains text copied over from the assignment specification
+and contains all variations of charachter, space, and new lines such
+that every transition and thus every line of statements will be tested.
+This includes (added) double spaces, and double new lines.
+
+5: 
+
+6:
 
 
 ------------------------------------------------------------------------

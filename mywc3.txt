@@ -1,0 +1,20 @@
+The purpose of  this  assignment is to help you learn about ARMv8 computer architecture, ARMv8 assembly language programming, and testing strategies. It also will give you the opportunity to learn more about the GNU/Linux programming tools, especially bash, emacs, gcc, gdb, and gprof.
+
+The assignment consists of two parts, each of which has subparts. We encourage you to complete Part 1 during the first half of the assginment period.
+
+A similar  assignment  was given in past semesters. Since the switch to the ARMv8 architecture and assembly language, students reported taking, on average, 21.5 hours to complete the assignment — certainly a serious undertaking! (But in the recent terms for which this was a partnered assignment, the average has been marginally lower: approximately 19 hours, counting both partnered and individual submissions.)
+
+You may work with one partner on this assignment. You need not work with a partner, but we strongly prefer that you do. Your preceptor will help you with your partner search, if you so desire.
+
+Part 2f, as defined below, is the "challenge" part of this assignment. While doing the challenge part of the assignment, you are bound to observe the course policies regarding assignment conduct as given in the course Policies web page, plus one additional policy: you may not use any "human" sources of information. That is, you may not consult with the course's staff members, the Intro Lab TAs, other current students via Ed, or any other people while working on the challenge part of an assignment, except for clarification of requirements.
+
+The challenge part is worth 10 percent of this assignment. So if you don't do any of the challenge part and all other parts of your assignment solution are perfect and submitted on time, then your grade for the assignment will be 90 percent.
+
+As you have been doing thus far in the course, you may write code in whatever development environment and on whatever computer you see fit. For this assignment it is necessary to do all testing, debugging, and timing on armlab, however.
+
+As with the other assignments, you will create your own repository, separate from ours, that has the same contents as ours. As a reminder, you can complete Setup Step 5 from the Git and GitHub Primer or follow these procedures to import your own version of our contents into your GitHub account.
+
+The repository that you will import into your own is:
+https://github.com/COS217/Assembly.
+
+This repository contains files that you will find useful. Subsequent parts of this document describe them. Once you have your working copy, complete the parts of the assignment given below, in the order of their appearance.
