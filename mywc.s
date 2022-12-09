@@ -5,7 +5,7 @@
 
     .section .rodata
 outputStr:
-        .string "%7ld %7ld %7ld\n"
+    .string "%7ld %7ld %7ld\n"
 
     .section .data
 
