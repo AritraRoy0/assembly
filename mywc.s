@@ -129,7 +129,7 @@ epilog:
     adr x10, lLineCount
     adr x11, lWordCount
     adr x12, lCharCount
-    ldr x0, outputStr
+    adr x0, outputStr
     ldr x1, [x10]
     ldr x2, [x11]
     ldr x3, [x12]
