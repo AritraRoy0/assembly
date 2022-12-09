@@ -91,7 +91,7 @@ elseBlock:
 afterConditions:
         // if (iChar == '\n')
     adr x9, iChar
-    ldr w10, [x9]
+    ldrb w10, [x9]
     cmp w10, '\n'
     bne mainLoopBack
         // lLineCount++;
