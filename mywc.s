@@ -40,10 +40,10 @@ main:
 mainLoop:
     // while ((iChar = getchar()) != EOF)
     bl  getchar
-    cmp x0, EOF
+    cmp w0, EOF
     beq endMainLoop
     adr x9, iChar
-    str x0, [x9]
+    str w0, [x9]
 
     // lCharCount++;
     adr x10, lCharCount
@@ -54,7 +54,7 @@ mainLoop:
     // if (isspace(iChar)) (w0 contains iChar)
 
     bl  isspace
-    cmp x0, FALSE
+    cmp w0, FALSE
     beq elseBlock
 
     // if (iInWord)
