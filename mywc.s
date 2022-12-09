@@ -40,10 +40,10 @@ main:
 mainLoop:
     // while ((iChar = getchar()) != EOF)
     bl  getchar
-    cmp w0, EOF
+    cmp x0, EOF
     beq endMainLoop
     adr x9, iChar
-    str w0, [x9]
+    str x0, [x9]
 
     // lCharCount++;
     adr x10, lCharCount
@@ -54,7 +54,7 @@ mainLoop:
     // if (isspace(iChar)) (w0 contains iChar)
 
     bl  isspace
-    cmp w0, FALSE
+    cmp x0, FALSE
     beq elseBlock
 
     // if (iInWord)
@@ -131,7 +131,7 @@ epilog:
 
 
 // Epilog and return 0
-    mov w0, 0
+    mov x0, 0
     ldr x30, [sp]
     add sp, sp, MAIN_STACK_BYTECOUNT
     ret
