@@ -26,7 +26,7 @@ iChar: .skip 1
     //--------------------------------------------------------------
 
     // Must be a multiple of 16
-    .equ    MAIN_STACK_BYTECOUNT, 16
+    .equ    MAIN_STACK_BYTECOUNT, 48
     .equ    TRUE, 1
     .equ    FALSE, 0
     .equ    EOF, -1
