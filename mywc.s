@@ -26,7 +26,7 @@ iChar: .skip 1
     //--------------------------------------------------------------
 
     // Must be a multiple of 16
-    .equ    MAIN_STACK_BYTECOUNT, 48
+    .equ    MAIN_STACK_BYTECOUNT, 16
     .equ    TRUE, 1
     .equ    FALSE, 0
     .equ    EOF, -1
@@ -121,11 +121,10 @@ endMainLoop:
 
 epilog:
     // printf("%7ld %7ld %7ld\n", lLineCount, lWordCount, lCharCount);
-    adr x9, outputStr
     adr x10, lLineCount
     adr x11, lWordCount
     adr x12, lCharCount
-    ldr x0, [x9]
+    ldr x0, outputStr
     ldr x1, [x10]
     ldr x2, [x11]
     ldr x3, [x12]
