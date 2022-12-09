@@ -4,7 +4,8 @@
 //----------------------------------------------------------------------
 
     .section .rodata
-
+outputStr:
+        .string "%7ld %7ld %7ld\n"
 
     .section .data
 
@@ -120,13 +121,14 @@ endMainLoop:
 
 epilog:
     // printf("%7ld %7ld %7ld\n", lLineCount, lWordCount, lCharCount);
-
-    adr x9, lLineCount
-    adr x10, lWordCount
-    adr x11, lCharCount
+    adr x9, outputStr
+    adr x10, lLineCount
+    adr x11, lWordCount
+    adr x12, lCharCount
     ldr x0, [x9]
     ldr x1, [x10]
     ldr x2, [x11]
+    ldr x3, [x12]
     bl  printf
 
 
