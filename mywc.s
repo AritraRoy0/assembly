@@ -132,7 +132,7 @@ epilog:
 
 
 // Epilog and return 0
-    mov x0, 0
+    mov w0, 0
     ldr x30, [sp]
     add sp, sp, MAIN_STACK_BYTECOUNT
     ret
