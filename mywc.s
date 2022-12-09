@@ -73,6 +73,7 @@ mainLoop:
 
     mov w10, FALSE
     str w10, [x9]
+    b   afterConditions
 
 elseBlock:
 

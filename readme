@@ -3,13 +3,13 @@ Assignment 5 readme File
 ------------------------------------------------------------------------
 Student 1: What is your name?
 
-
+Roy Mazumder
 
 ------------------------------------------------------------------------
 Student 2: What is your name?
 
 
-
+N/A
 ------------------------------------------------------------------------
 Student 1: What authorized sources of information did you use to
 complete the assignment? COPY THE LIST of authorized sources of
@@ -19,12 +19,6 @@ readme file, and edit it as appropriate.
 
 
 
-------------------------------------------------------------------------
-Student 2: What authorized sources of information did you use to
-complete the assignment? COPY THE LIST of authorized sources of
-information given in the "Policies" web page (also available on armlab
-in the file ~cos217/AuthorizedSourcesList ) to this section of the
-readme file, and edit it as appropriate.
 
 
 
@@ -42,30 +36,14 @@ no unauthorized sources of information.
 
 
 
-------------------------------------------------------------------------
-Student 2: What unauthorized sources of information did you use to
-complete the assignment? List any unauthorized sources of information
-that you used to complete the assignment, and describe how you used
-them. The course "Policies" web page defines unauthorized sources of
-information, and any source that you have used but not listed in the
-authorized sources should be included here. Please note that using an
-unauthorized source may trigger a course penalty, and depending on the
-nature of the interaction, may additionally require the interaction
-being reported to the Committee on Discipline. Write "None" if you used
-no unauthorized sources of information.
-
 
 
 ------------------------------------------------------------------------
 Student 1: What is your assessment of the assignment? Was it helpful?
 Was it fun?
 
-
-
-------------------------------------------------------------------------
-Student 2: What is your assessment of the assignment? Was it helpful?
-Was it fun?
-
+This assignment was very difficult and confusing. It was fun to figure 
+out though.
 
 
 ------------------------------------------------------------------------
@@ -77,6 +55,12 @@ particular, what bugs are in your submission?
 
 ------------------------------------------------------------------------
 What is your mywc program test plan?
+
+mywc*.txt is general format of test files
+
+0: Minimum test copied from assignment specification site for initial 
+testing
+
 
 
 
