@@ -54,7 +54,7 @@ retSecond:
     .equ MAX_DIGITS, 32768
 
 
-    .global .BigInt_add
+    .global BigInt_add
 
 BigInt_add:
     // Prolog
