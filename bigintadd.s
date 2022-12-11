@@ -138,7 +138,7 @@ mainFor:
 ifNot1:
 
     // ulSum += oAddend2->aulDigits[lIndex];
-        // x0: ulSum
+    ldr x0, [sp, ULSUM]
     ldr x1, [sp, OADDEND2]
     add x1, x1, AULDIGITS
     ldr x3, [sp, LINDEX]
@@ -162,6 +162,7 @@ ifNot1:
 ifNot2:  
     // oSum->aulDigits[lIndex] = ulSum;
         // x0 still contains ULSUM
+    ldr x0, [sp, ULSUM]
     ldr x1, [sp, OSUM]
     add x1, x1, AULDIGITS
     ldr x3, [sp, LINDEX]
