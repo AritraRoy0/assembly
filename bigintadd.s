@@ -208,7 +208,8 @@ ifNot4:
     mov x2, 1
     str x2, [x1]
 
-    // lSumLength++; x0 contains LSUMLENGTH
+    // lSumLength++; 
+    ldr x0, [sp, LSUMLENGTH]
     add x0, x0, 1
     str x0, [sp, LSUMLENGTH]
 
