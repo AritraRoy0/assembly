@@ -23,7 +23,7 @@ retSecond:
     mov x0, x1
     ret
 
-
+    .size   BigInt_larger, (. - BigInt_larger)
 /* Assign the sum of oAddend1 and oAddend2 to oSum.  oSum should be
    distinct from oAddend1 and oAddend2.  Return 0 (FALSE) if an
    overflow occurred, and 1 (TRUE) otherwise. */
