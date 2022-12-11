@@ -201,7 +201,6 @@ ifNot4:
 
     ldr x1, [sp, OSUM]
     add x1, x1, AULDIGITS
-    lsl x0, x0, 3
     add x1, x1, x0
 
     mov x2, 1
