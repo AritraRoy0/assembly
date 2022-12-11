@@ -99,7 +99,7 @@ mainFor:
     ldr x1, [sp, LSUMLENGTH]
     // if (LINDEX >= LSUMLENGTH) go to end for
     cmp x0, x1
-    bhs endFor
+    bge endFor
 
 // body of for loop
 
