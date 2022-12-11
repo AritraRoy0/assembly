@@ -17,7 +17,7 @@ in registers x0 and x1 respectively. */
 
 BigInt_larger:
     cmp x0, x1
-    blo retSecond
+    blt retSecond
     ret
 retSecond:
     mov x0, x1
