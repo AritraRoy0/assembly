@@ -165,6 +165,7 @@ ifNot2:
     ldr x1, [sp, OSUM]
     add x1, x1, AULDIGITS
     ldr x3, [sp, LINDEX]
+    lsl x3, x3, 3
     add x1, x1, x3
     str x0, [x1]
 
