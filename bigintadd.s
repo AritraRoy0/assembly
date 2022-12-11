@@ -51,7 +51,7 @@ retSecond:
     .equ    AULDIGITS, 8
 
     // Program constants
-    .equ MAX_DIGITS 32768
+    .equ MAX_DIGITS, 32768
 
 
     .global .BigInt_add
@@ -115,8 +115,8 @@ mainFor:
 
     ldr x0, [sp, ULSUM]
     ldr x1, [sp, OADDEND1]
-    add x1, AULDIGITS
-    add x1, LINDEX
+    add x1, x1, AULDIGITS
+    add x1, x1, LINDEX
     ldr x1, [x1]
 
     add x0, x0, x1
@@ -138,8 +138,8 @@ ifNot1:
     // ulSum += oAddend2->aulDigits[lIndex];
         // x0: ulSum
     ldr x1, [sp, OADDEND2]
-    add x1, AULDIGITS
-    add x1, LINDEX
+    add x1, x1, AULDIGITS
+    add x1, x1, LINDEX
     ldr x1, [x1]   
 
     add x0, x0, x1
