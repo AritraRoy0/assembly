@@ -218,3 +218,5 @@ ifNot3:
     ldr x30, [sp]
     add sp, sp, BIGINT_STACK_BYTECOUNT
     ret
+
+    .size   BigInt_add, (. - BigInt_add)
