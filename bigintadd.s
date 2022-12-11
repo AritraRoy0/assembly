@@ -17,7 +17,7 @@ in registers x0 and x1 respectively. */
 
 BigInt_larger:
     cmp x0, x1
-    blt retSecond
+    blo retSecond
     ret
 retSecond:
     mov x0, x1
@@ -99,7 +99,7 @@ mainFor:
     ldr x1, [sp, LSUMLENGTH]
     // if (LINDEX >= LSUMLENGTH) go to end for
     cmp x0, x1
-    bge endFor
+    bhs endFor
 
 // body of for loop
 
