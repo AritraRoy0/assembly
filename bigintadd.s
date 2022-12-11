@@ -117,6 +117,7 @@ mainFor:
     ldr x1, [sp, OADDEND1]
     add x1, x1, AULDIGITS
     ldr x3, [sp, LINDEX]
+    lsl x3, x3, 3
     add x1, x1, x3
     ldr x1, [x1]
 
@@ -141,6 +142,7 @@ ifNot1:
     ldr x1, [sp, OADDEND2]
     add x1, x1, AULDIGITS
     ldr x3, [sp, LINDEX]
+    lsl x3, x3, 3
     add x1, x1, x3
     ldr x1, [x1]   
 
@@ -195,8 +197,11 @@ ifNot4:
  // Check for a carry out of the last "column" of the addition.
     // oSum->aulDigits[lSumLength] = 1;
     ldr x0, [sp, LSUMLENGTH]
+    lsl x0, x0, 3
+
     ldr x1, [sp, OSUM]
     add x1, x1, AULDIGITS
+    lsl x0, x0, 3
     add x1, x1, x0
 
     mov x2, 1
