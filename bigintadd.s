@@ -116,7 +116,8 @@ mainFor:
     ldr x0, [sp, ULSUM]
     ldr x1, [sp, OADDEND1]
     add x1, x1, AULDIGITS
-    add x1, x1, LINDEX
+    ldr x3, [sp, LINDEX]
+    add x1, x1, x3
     ldr x1, [x1]
 
     add x0, x0, x1
@@ -139,7 +140,8 @@ ifNot1:
         // x0: ulSum
     ldr x1, [sp, OADDEND2]
     add x1, x1, AULDIGITS
-    add x1, x1, LINDEX
+    ldr x3, [sp, LINDEX]
+    add x1, x1, x3
     ldr x1, [x1]   
 
     add x0, x0, x1
@@ -160,7 +162,8 @@ ifNot2:
         // x0 still contains ULSUM
     ldr x1, [sp, OSUM]
     add x1, x1, AULDIGITS
-    add x1, x1, LINDEX
+    ldr x3, [sp, LINDEX]
+    add x1, x1, x3
     str x0, [x1]
 
     // LINDEX++;
